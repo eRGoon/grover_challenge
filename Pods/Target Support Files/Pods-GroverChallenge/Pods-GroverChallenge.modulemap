@@ -1,0 +1,6 @@
+framework module Pods_GroverChallenge {
+  umbrella header "Pods-GroverChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

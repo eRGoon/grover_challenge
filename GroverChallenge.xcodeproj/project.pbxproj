@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45D32FBE7B91440B8B49A089 /* Pods_GroverChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AB158973B36B07721508C5 /* Pods_GroverChallenge.framework */; };
 		E32756441F6B038F00861777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32756431F6B038F00861777 /* AppDelegate.swift */; };
 		E32756491F6B038F00861777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32756471F6B038F00861777 /* Main.storyboard */; };
 		E327564C1F6B038F00861777 /* GroverChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E327564A1F6B038F00861777 /* GroverChallenge.xcdatamodeld */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B5588D1B5E9A39467FDA15A /* Pods-GroverChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroverChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroverChallenge/Pods-GroverChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C1B9200A9EFC96C40CB6829F /* Pods-GroverChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroverChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroverChallenge/Pods-GroverChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		E32756401F6B038F00861777 /* GroverChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroverChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32756431F6B038F00861777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E32756481F6B038F00861777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		E37447511F70531600BA4556 /* CDLocation+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDLocation+Location.swift"; sourceTree = "<group>"; };
 		E3A43DCC1F6F054200D9BF33 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E3CE2E551F6D41D300A540C3 /* CDPlace+Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDPlace+Place.swift"; sourceTree = "<group>"; };
+		F7AB158973B36B07721508C5 /* Pods_GroverChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroverChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D32FBE7B91440B8B49A089 /* Pods_GroverChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C0FFA539F9367595532B5E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1B9200A9EFC96C40CB6829F /* Pods-GroverChallenge.debug.xcconfig */,
+				7B5588D1B5E9A39467FDA15A /* Pods-GroverChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E32756371F6B038F00861777 = {
 			isa = PBXGroup;
 			children = (
 				E32756421F6B038F00861777 /* GroverChallenge */,
 				E32756411F6B038F00861777 /* Products */,
+				6C0FFA539F9367595532B5E4 /* Pods */,
+				FBA35BC328EF9D520596E787 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +174,14 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		FBA35BC328EF9D520596E787 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7AB158973B36B07721508C5 /* Pods_GroverChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E32756551F6B038F00861777 /* Build configuration list for PBXNativeTarget "GroverChallenge" */;
 			buildPhases = (
+				631DBDA9B9212C3FA4B714B9 /* [CP] Check Pods Manifest.lock */,
 				E327563C1F6B038F00861777 /* Sources */,
 				E327563D1F6B038F00861777 /* Frameworks */,
 				E327563E1F6B038F00861777 /* Resources */,
+				EC92992391F963C8AE3EA995 /* [CP] Embed Pods Frameworks */,
+				707367E8E80A680C927EF054 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +251,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		631DBDA9B9212C3FA4B714B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroverChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		707367E8E80A680C927EF054 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroverChallenge/Pods-GroverChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC92992391F963C8AE3EA995 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GroverChallenge/Pods-GroverChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroverChallenge/Pods-GroverChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E327563C1F6B038F00861777 /* Sources */ = {
@@ -364,6 +445,7 @@
 		};
 		E32756561F6B038F00861777 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B9200A9EFC96C40CB6829F /* Pods-GroverChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GroverChallenge/Info.plist;
@@ -377,6 +459,7 @@
 		};
 		E32756571F6B038F00861777 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B5588D1B5E9A39467FDA15A /* Pods-GroverChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GroverChallenge/Info.plist;
