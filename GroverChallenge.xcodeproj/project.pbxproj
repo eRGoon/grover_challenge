@@ -8,22 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		E32756441F6B038F00861777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32756431F6B038F00861777 /* AppDelegate.swift */; };
-		E32756461F6B038F00861777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32756451F6B038F00861777 /* ViewController.swift */; };
 		E32756491F6B038F00861777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32756471F6B038F00861777 /* Main.storyboard */; };
 		E327564C1F6B038F00861777 /* GroverChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E327564A1F6B038F00861777 /* GroverChallenge.xcdatamodeld */; };
 		E327564E1F6B038F00861777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E327564D1F6B038F00861777 /* Assets.xcassets */; };
 		E32756511F6B038F00861777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E327564F1F6B038F00861777 /* LaunchScreen.storyboard */; };
+		E327565E1F6B044300861777 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327565D1F6B044300861777 /* Store.swift */; };
+		E32756601F6B046500861777 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327565F1F6B046500861777 /* Place.swift */; };
+		E32756631F6B05C100861777 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32756621F6B05C100861777 /* Router.swift */; };
+		E32756681F6B138100861777 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32756671F6B138100861777 /* Errors.swift */; };
+		E327566E1F6D20FE00861777 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327566D1F6D20FE00861777 /* LaunchViewController.swift */; };
+		E374474E1F70447200BA4556 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374474D1F70447200BA4556 /* Configuration.swift */; };
+		E37447501F70468300BA4556 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374474F1F70468300BA4556 /* Helpers.swift */; };
+		E37447521F70531600BA4556 /* CDLocation+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37447511F70531600BA4556 /* CDLocation+Location.swift */; };
+		E3A43DCD1F6F054200D9BF33 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A43DCC1F6F054200D9BF33 /* Extensions.swift */; };
+		E3CE2E561F6D41D300A540C3 /* CDPlace+Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE2E551F6D41D300A540C3 /* CDPlace+Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E32756401F6B038F00861777 /* GroverChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroverChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32756431F6B038F00861777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E32756451F6B038F00861777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E32756481F6B038F00861777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E327564B1F6B038F00861777 /* GroverChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GroverChallenge.xcdatamodel; sourceTree = "<group>"; };
 		E327564D1F6B038F00861777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32756501F6B038F00861777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32756521F6B038F00861777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E327565D1F6B044300861777 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E327565F1F6B046500861777 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		E32756621F6B05C100861777 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E32756671F6B138100861777 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		E327566D1F6D20FE00861777 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		E374474D1F70447200BA4556 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		E374474F1F70468300BA4556 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		E37447511F70531600BA4556 /* CDLocation+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDLocation+Location.swift"; sourceTree = "<group>"; };
+		E3A43DCC1F6F054200D9BF33 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E3CE2E551F6D41D300A540C3 /* CDPlace+Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDPlace+Place.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,88 @@
 		E32756421F6B038F00861777 /* GroverChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				E32756431F6B038F00861777 /* AppDelegate.swift */,
-				E32756451F6B038F00861777 /* ViewController.swift */,
-				E32756471F6B038F00861777 /* Main.storyboard */,
-				E327564D1F6B038F00861777 /* Assets.xcassets */,
-				E327564F1F6B038F00861777 /* LaunchScreen.storyboard */,
-				E32756521F6B038F00861777 /* Info.plist */,
-				E327564A1F6B038F00861777 /* GroverChallenge.xcdatamodeld */,
+				E32756641F6B060B00861777 /* API */,
+				E32756581F6B03B400861777 /* App */,
+				E327565A1F6B03D400861777 /* Controllers */,
+				E327565C1F6B03F700861777 /* Data */,
+				E327565B1F6B03EA00861777 /* Layouts */,
+				E32756591F6B03C700861777 /* Resources */,
+				E374474D1F70447200BA4556 /* Configuration.swift */,
+				E32756671F6B138100861777 /* Errors.swift */,
+				E3A43DCC1F6F054200D9BF33 /* Extensions.swift */,
+				E374474F1F70468300BA4556 /* Helpers.swift */,
 			);
 			path = GroverChallenge;
+			sourceTree = "<group>";
+		};
+		E32756581F6B03B400861777 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E32756431F6B038F00861777 /* AppDelegate.swift */,
+				E32756521F6B038F00861777 /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		E32756591F6B03C700861777 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E327564D1F6B038F00861777 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E327565A1F6B03D400861777 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E327566D1F6D20FE00861777 /* LaunchViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E327565B1F6B03EA00861777 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				E3A43DC91F6DBDCF00D9BF33 /* Storyboards */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		E327565C1F6B03F700861777 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E32756611F6B046A00861777 /* Models */,
+				E327565D1F6B044300861777 /* Store.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		E32756611F6B046A00861777 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E37447511F70531600BA4556 /* CDLocation+Location.swift */,
+				E3CE2E551F6D41D300A540C3 /* CDPlace+Place.swift */,
+				E327565F1F6B046500861777 /* Place.swift */,
+				E327564A1F6B038F00861777 /* GroverChallenge.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E32756641F6B060B00861777 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E32756621F6B05C100861777 /* Router.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		E3A43DC91F6DBDCF00D9BF33 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E327564F1F6B038F00861777 /* LaunchScreen.storyboard */,
+				E32756471F6B038F00861777 /* Main.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +231,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E327564C1F6B038F00861777 /* GroverChallenge.xcdatamodeld in Sources */,
-				E32756461F6B038F00861777 /* ViewController.swift in Sources */,
+				E327566E1F6D20FE00861777 /* LaunchViewController.swift in Sources */,
+				E374474E1F70447200BA4556 /* Configuration.swift in Sources */,
 				E32756441F6B038F00861777 /* AppDelegate.swift in Sources */,
+				E327565E1F6B044300861777 /* Store.swift in Sources */,
+				E37447521F70531600BA4556 /* CDLocation+Location.swift in Sources */,
+				E32756681F6B138100861777 /* Errors.swift in Sources */,
+				E3CE2E561F6D41D300A540C3 /* CDPlace+Place.swift in Sources */,
+				E3A43DCD1F6F054200D9BF33 /* Extensions.swift in Sources */,
+				E32756631F6B05C100861777 /* Router.swift in Sources */,
+				E32756601F6B046500861777 /* Place.swift in Sources */,
+				E37447501F70468300BA4556 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GroverChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ergoon.GroverChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GroverChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ergoon.GroverChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,6 +407,7 @@
 				E32756571F6B038F00861777 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
