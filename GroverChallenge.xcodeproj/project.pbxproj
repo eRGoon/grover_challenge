@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		45D32FBE7B91440B8B49A089 /* Pods_GroverChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AB158973B36B07721508C5 /* Pods_GroverChallenge.framework */; };
+		E326547C1F70651400EC3E96 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E326547B1F70651400EC3E96 /* PlaceViewController.swift */; };
+		E326547E1F70661500EC3E96 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E326547D1F70661500EC3E96 /* PlaceCell.swift */; };
+		E32654811F7066AD00EC3E96 /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E32654801F7066AD00EC3E96 /* PlaceCell.xib */; };
 		E32756441F6B038F00861777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32756431F6B038F00861777 /* AppDelegate.swift */; };
 		E32756491F6B038F00861777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32756471F6B038F00861777 /* Main.storyboard */; };
 		E327564C1F6B038F00861777 /* GroverChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E327564A1F6B038F00861777 /* GroverChallenge.xcdatamodeld */; };
@@ -22,12 +25,16 @@
 		E37447501F70468300BA4556 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374474F1F70468300BA4556 /* Helpers.swift */; };
 		E37447521F70531600BA4556 /* CDLocation+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37447511F70531600BA4556 /* CDLocation+Location.swift */; };
 		E3A43DCD1F6F054200D9BF33 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A43DCC1F6F054200D9BF33 /* Extensions.swift */; };
+		E3C1A2D11F705CA0004358F1 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1A2D01F705CA0004358F1 /* PlacesViewController.swift */; };
 		E3CE2E561F6D41D300A540C3 /* CDPlace+Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE2E551F6D41D300A540C3 /* CDPlace+Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B5588D1B5E9A39467FDA15A /* Pods-GroverChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroverChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroverChallenge/Pods-GroverChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		C1B9200A9EFC96C40CB6829F /* Pods-GroverChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroverChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroverChallenge/Pods-GroverChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		E326547B1F70651400EC3E96 /* PlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		E326547D1F70661500EC3E96 /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		E32654801F7066AD00EC3E96 /* PlaceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
 		E32756401F6B038F00861777 /* GroverChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroverChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32756431F6B038F00861777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E32756481F6B038F00861777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +51,7 @@
 		E374474F1F70468300BA4556 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		E37447511F70531600BA4556 /* CDLocation+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDLocation+Location.swift"; sourceTree = "<group>"; };
 		E3A43DCC1F6F054200D9BF33 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E3C1A2D01F705CA0004358F1 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		E3CE2E551F6D41D300A540C3 /* CDPlace+Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDPlace+Place.swift"; sourceTree = "<group>"; };
 		F7AB158973B36B07721508C5 /* Pods_GroverChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroverChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +75,22 @@
 				7B5588D1B5E9A39467FDA15A /* Pods-GroverChallenge.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E326547F1F70661E00EC3E96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E326547D1F70661500EC3E96 /* PlaceCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E32654821F7066B600EC3E96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E32654801F7066AD00EC3E96 /* PlaceCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E32756371F6B038F00861777 = {
@@ -96,6 +120,7 @@
 				E327565C1F6B03F700861777 /* Data */,
 				E327565B1F6B03EA00861777 /* Layouts */,
 				E32756591F6B03C700861777 /* Resources */,
+				E326547F1F70661E00EC3E96 /* Views */,
 				E374474D1F70447200BA4556 /* Configuration.swift */,
 				E32756671F6B138100861777 /* Errors.swift */,
 				E3A43DCC1F6F054200D9BF33 /* Extensions.swift */,
@@ -125,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				E327566D1F6D20FE00861777 /* LaunchViewController.swift */,
+				E3C1A2D01F705CA0004358F1 /* PlacesViewController.swift */,
+				E326547B1F70651400EC3E96 /* PlaceViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -133,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E3A43DC91F6DBDCF00D9BF33 /* Storyboards */,
+				E32654821F7066B600EC3E96 /* Views */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -217,7 +245,7 @@
 				TargetAttributes = {
 					E327563F1F6B038F00861777 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -247,6 +275,7 @@
 				E32756511F6B038F00861777 /* LaunchScreen.storyboard in Resources */,
 				E327564E1F6B038F00861777 /* Assets.xcassets in Resources */,
 				E32756491F6B038F00861777 /* Main.storyboard in Resources */,
+				E32654811F7066AD00EC3E96 /* PlaceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,8 +347,11 @@
 				E327565E1F6B044300861777 /* Store.swift in Sources */,
 				E37447521F70531600BA4556 /* CDLocation+Location.swift in Sources */,
 				E32756681F6B138100861777 /* Errors.swift in Sources */,
+				E3C1A2D11F705CA0004358F1 /* PlacesViewController.swift in Sources */,
 				E3CE2E561F6D41D300A540C3 /* CDPlace+Place.swift in Sources */,
 				E3A43DCD1F6F054200D9BF33 /* Extensions.swift in Sources */,
+				E326547C1F70651400EC3E96 /* PlaceViewController.swift in Sources */,
+				E326547E1F70661500EC3E96 /* PlaceCell.swift in Sources */,
 				E32756631F6B05C100861777 /* Router.swift in Sources */,
 				E32756601F6B046500861777 /* Place.swift in Sources */,
 				E37447501F70468300BA4556 /* Helpers.swift in Sources */,
@@ -448,11 +480,14 @@
 			baseConfigurationReference = C1B9200A9EFC96C40CB6829F /* Pods-GroverChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GroverChallenge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ergoon.GroverChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -462,11 +497,14 @@
 			baseConfigurationReference = 7B5588D1B5E9A39467FDA15A /* Pods-GroverChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GroverChallenge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ergoon.GroverChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

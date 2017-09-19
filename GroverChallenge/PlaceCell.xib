@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlaceCell" customModule="GroverChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzr-7k-FBh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8M-bi-GaS">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                        </mapView>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ve6-s2-HkP">
+                            <rect key="frame" x="10" y="216" width="355" height="34"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fXe-EC-6tN">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.65000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="pIT-K4-uXl">
+                                        <rect key="frame" x="160" y="8.5" width="35.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pIT-K4-uXl" secondAttribute="trailing" constant="12" id="AHp-1g-kn8"/>
+                                    <constraint firstItem="pIT-K4-uXl" firstAttribute="centerX" secondItem="fXe-EC-6tN" secondAttribute="centerX" id="Mhj-qz-Weu"/>
+                                    <constraint firstItem="pIT-K4-uXl" firstAttribute="centerY" secondItem="fXe-EC-6tN" secondAttribute="centerY" id="YTA-qB-TS6"/>
+                                    <constraint firstItem="pIT-K4-uXl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fXe-EC-6tN" secondAttribute="leading" constant="12" id="rIm-dZ-AvE"/>
+                                </constraints>
+                            </view>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="7PU-jy-c1v"/>
+                            </constraints>
+                            <blurEffect style="extraLight"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </visualEffectView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="n8M-bi-GaS" firstAttribute="top" secondItem="Jzr-7k-FBh" secondAttribute="top" id="AXK-fZ-OVu"/>
+                        <constraint firstAttribute="bottom" secondItem="ve6-s2-HkP" secondAttribute="bottom" constant="10" id="H6t-qX-1Xy"/>
+                        <constraint firstAttribute="trailing" secondItem="ve6-s2-HkP" secondAttribute="trailing" constant="10" id="Lu1-Gr-NQX"/>
+                        <constraint firstItem="n8M-bi-GaS" firstAttribute="leading" secondItem="Jzr-7k-FBh" secondAttribute="leading" id="dXD-t6-c9F"/>
+                        <constraint firstAttribute="bottom" secondItem="n8M-bi-GaS" secondAttribute="bottom" id="ntF-wh-yj8"/>
+                        <constraint firstAttribute="trailing" secondItem="n8M-bi-GaS" secondAttribute="trailing" id="rMi-yV-XZB"/>
+                        <constraint firstItem="ve6-s2-HkP" firstAttribute="leading" secondItem="Jzr-7k-FBh" secondAttribute="leading" constant="10" id="wf6-NY-b7Z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jzr-7k-FBh" secondAttribute="trailing" id="O8T-eq-4c4"/>
+                <constraint firstItem="Jzr-7k-FBh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o65-Lp-xHw"/>
+                <constraint firstItem="Jzr-7k-FBh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wIf-5G-4UA"/>
+                <constraint firstAttribute="bottom" secondItem="Jzr-7k-FBh" secondAttribute="bottom" id="xaL-zW-bBa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mapView" destination="n8M-bi-GaS" id="qlO-BY-XW2"/>
+                <outlet property="nameLabel" destination="pIT-K4-uXl" id="61c-wC-Vcp"/>
+            </connections>
+        </view>
+    </objects>
+</document>
