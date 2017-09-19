@@ -59,10 +59,6 @@ class Store {
         "id"
       ]
       
-      let locationQuery: NSFetchRequest<CDLocation> = CDLocation.fetchRequest()
-      
-      locationQuery.fetchLimit = 1
-      
       do {
         let existingPlaceIds = try moc.fetch(placeQuery).map { $0.id! }
         let newPlaces = places.filter { !existingPlaceIds.contains($0.id) }
@@ -72,22 +68,8 @@ class Store {
           
           cdPlace.populateWithPlace(newPlace)
           
-          let locationPredicate = [
-            NSPredicate(format: "lat = %f", newPlace.location.lat),
-            NSPredicate(format: "long = %f", newPlace.location.long)
-          ]
-          
-          locationQuery.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: locationPredicate)
-          
-          if let location = try moc.fetch(locationQuery).first {
-            location.addToPlace(cdPlace)
-          } else {
-            let location = CDLocation(context: moc)
-            
-            location.populateWithLocation(newPlace.location)
-            
-            location.addToPlace(cdPlace)
-          }
+          try self.addLocation(newPlace.location, to: cdPlace, saveIn: moc)
+          try self.addPhotos(newPlace.photos, to: cdPlace, saveIn: moc)
         }
         
         try moc.save()
@@ -102,6 +84,48 @@ class Store {
           completion(false)
         }
       }
+    }
+  }
+  
+  private func addLocation(_ location: Location, to place: CDPlace, saveIn moc: NSManagedObjectContext) throws {
+    let locationQuery: NSFetchRequest<CDLocation> = CDLocation.fetchRequest()
+    let locationPredicate = [
+      NSPredicate(format: "lat = %f", location.lat),
+      NSPredicate(format: "long = %f", location.long)
+    ]
+    
+    locationQuery.fetchLimit = 1
+    locationQuery.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: locationPredicate)
+    
+    if let cdLocation = try moc.fetch(locationQuery).first {
+      cdLocation.addToPlace(place)
+    } else {
+      let cdLocation = CDLocation(context: moc)
+      
+      cdLocation.populateWithLocation(location)
+      
+      cdLocation.addToPlace(place)
+    }
+  }
+  
+  private func addPhotos(_ photos: [String], to place: CDPlace, saveIn moc: NSManagedObjectContext) throws {
+    let photoQuery: NSFetchRequest<CDPhoto> = CDPhoto.fetchRequest()
+    let photoPredicate = [
+      NSPredicate(format: "reference IN %@", photos),
+      NSPredicate(format: "place = %@", place.objectID)
+    ]
+    
+    photoQuery.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: photoPredicate)
+    
+    let existingPhotoIds = try moc.fetch(photoQuery).map { $0.reference! }
+    let newPhotos = photos.filter { !existingPhotoIds.contains($0) }
+    
+    for newPhoto in newPhotos {
+      let cdPhoto = CDPhoto(context: moc)
+      
+      cdPhoto.reference = newPhoto
+      
+      place.addToPhotos(cdPhoto)
     }
   }
 }

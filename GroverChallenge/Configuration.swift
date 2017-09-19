@@ -12,7 +12,7 @@ class Configuration {
   static let `default` = Configuration()
   
   var apiBaseUrl: String {
-    return "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+    return "https://maps.googleapis.com"
   }
   var apiKey: String {
     return "AIzaSyCzuD8Y8G2aijHOKIiGYTdsFL9myXQ-NA4"

@@ -15,6 +15,10 @@ class PlacesViewController: UIViewController {
   // MARK: Outlets
   @IBOutlet weak var placesView: FSPagerView!
   
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
+  }
+  
   // MARK: Constants
   fileprivate let placeCellIdentifier = "placeCell"
   
@@ -64,6 +68,8 @@ class PlacesViewController: UIViewController {
       break
     }
   }
+  
+  @IBAction func dismissDetail(_ unwindSegue: UIStoryboardSegue) { }
 }
 
 // MARK: FSPagerViewDataSource
